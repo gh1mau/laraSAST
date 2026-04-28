@@ -2,7 +2,7 @@
 
 **LaraSAST** is a high-performance Static Analysis Security Testing (SAST) tool purpose-built for the Laravel ecosystem. It combines pattern-based scanning, integration with industry-standard security tools, and AI-powered insights to identify vulnerabilities in your Laravel source code before they reach production.
 
----
+
 
 ## ✨ Key Features
 
@@ -11,7 +11,7 @@
 - **Professional Reporting**: Generates interactive HTML reports (Acunetix-style), structured JSON, and beautiful terminal outputs using `rich`.
 - **Deep Integration**: Wraps powerful tools like `Semgrep`, `Grype`, and `Nuclei` for a comprehensive security audit.
 
----
+
 
 ## ⚙️ Requirements
 
@@ -32,7 +32,7 @@ The tool relies on the following libraries:
 - `rich`: For terminal formatting and UI components.
 - `requests`: For AI API communication.
 
----
+
 
 ## 🚀 Installation & Setup
 
@@ -58,7 +58,6 @@ source venv/bin/activate
 pip install rich requests
 ```
 
----
 
 ## 📊 Tool Workflow
 
@@ -79,7 +78,7 @@ graph LR
     F --> G[Console / JSON / HTML]
 ```
 
----
+
 
 ## 💻 Usage & Examples
 
@@ -99,7 +98,7 @@ export OPENROUTER_API_KEY='your_key_here'
 python main.py /path/to/laravel-project --format html --ai --ai-model "google/gemini-pro-1.5"
 ```
 
----
+
 
 ## 🛠️ CLI Options
 
@@ -112,7 +111,7 @@ python main.py /path/to/laravel-project --format html --ai --ai-model "google/ge
 | `--ai-model`    | The OpenRouter model ID to use for analysis.                                    | `mistralai/mistral-7b-instruct-v0.2` |
 | `--list-models` | Fetch and list available models from OpenRouter.                                | N/A                                  |
 
----
+
 
 ## 🔬 Scanner Modules
 
@@ -137,21 +136,24 @@ LaraSAST employs a variety of specialized modules to detect different types of v
 | `CsrfScanner`            | Analyzes CSRF protection implementation, especially for bypassed routes.                                      |
 | `VersionScanner`         | Checks for outdated Laravel or PHP versions.                                                                  |
 
----
 
-## ️ Visuals
+
+## ️ Screenshots
 
 ### Terminal Interface
 
-![Terminal Screenshot Placeholder]
+![!\[Terminal Screenshot Placeholder\]](https://raw.githubusercontent.com/gh1mau/laraSAST/refs/heads/main/screenshots/t1.jpg)
+
+![enter image description here](https://raw.githubusercontent.com/gh1mau/laraSAST/refs/heads/main/screenshots/t2.jpg)
 _The terminal uses Rich for a dashboard-like experience during scans._
 
 ### Professional HTML Report
+![enter image description here](https://raw.githubusercontent.com/gh1mau/laraSAST/refs/heads/main/screenshots/r1.jpg)
 
-![HTML Report Placeholder]
-_Interactive Acunetix-style reports including Chart.js distribution and AI-generated PoCs._
+![enter image description here](https://raw.githubusercontent.com/gh1mau/laraSAST/refs/heads/main/screenshots/r2.jpg)
+_Interactive reports including Chart distribution and AI-generated PoCs._
 
----
+
 
 ## 📝 TODO List
 
@@ -161,11 +163,10 @@ _Interactive Acunetix-style reports including Chart.js distribution and AI-gener
 - [ ] **Custom Ruleset**: Allow users to provide their own Semgrep or Nuclei rules via the CLI.
 - [ ] **False Positive Filtering**: Implement a "mark as resolved" feature in the JSON configuration.
 
----
 
-**Maintainer:** Hussein bin Mohamed | masta ghimau  
+**Maintainer:** **Hussein bin Mohamed | masta ghimau**  
 **License:** MIT
 
-```
 
-```
+
+
