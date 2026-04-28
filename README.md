@@ -8,7 +8,7 @@
 
 - **Multi-threaded Scanning**: Executes multiple security modules concurrently for rapid results.
 - **AI-Powered Insights**: Integrates with OpenRouter (Mistral/Gemini) to provide Proof-of-Concept (PoC) scenarios and specific mitigation advice.
-- **Professional Reporting**: Generates interactive HTML reports (Acunetix-style), structured JSON, and beautiful terminal outputs using `rich`.
+- **Professional Reporting**: Generates interactive HTML reports, structured JSON, and beautiful terminal outputs using `rich`.
 - **Deep Integration**: Wraps powerful tools like `Semgrep`, `Grype`, and `Nuclei` for a comprehensive security audit.
 
 
