@@ -1,0 +1,8 @@
+rules:
+  - id: laravel-raw-sql-injection
+    patterns:
+      - pattern: DB::raw(...)
+      - pattern-not: DB::raw("...")
+    message: "Detected DB::raw() with dynamic variables. This is a high-risk SQL Injection vector."
+    severity: ERROR
+    languages: [php]
